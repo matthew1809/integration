@@ -33,7 +33,7 @@ const Web3IntegrationApp = () => {
   return (
     <div className="flex flex-col h-screen bg-gray-900 text-white">
       <header className="bg-gray-800 p-4 flex justify-between items-center">
-        <h1 className="text-xl font-bold">DeCentral Mind</h1>
+        <h1 className="text-xl font-bold">Integration</h1>
         <DynamicWidget />
         {/* {!isWalletConnected ? (
           <button onClick={connectWallet} className="bg-purple-600 text-white px-4 py-2 rounded-full flex items-center">
@@ -92,13 +92,13 @@ const HomeScreen = ({ isWalletConnected }) => (
 
 const JournalScreen = ({ isWalletConnected }) => (
   <div>
-    <h2 className="text-2xl font-semibold mb-6">Decentralized Integration Journal</h2>
+    <h2 className="text-2xl font-semibold mb-6"> Integration Journal</h2>
     <div className="bg-gray-800 rounded-lg shadow p-4 mb-4">
-      <h3 className="font-semibold mb-2">New Encrypted Entry</h3>
+      <h3 className="font-semibold mb-2">New Entry</h3>
       <input type="text" className="w-full p-2 border rounded bg-gray-700 text-white mb-2" placeholder="Title" />
       <textarea className="w-full p-2 border rounded bg-gray-700 text-white" rows="4" placeholder="Write your thoughts here..."></textarea>
       {isWalletConnected ? (
-        <button className="mt-2 bg-purple-600 text-white px-4 py-2 rounded-full">Encrypt and Save to IPFS</button>
+        <button className="mt-2 bg-purple-600 text-white px-4 py-2 rounded-full">Encrypt and Save </button>
       ) : (
         <p className="mt-2 text-yellow-400">Connect wallet to encrypt and save entries</p>
       )}
@@ -118,7 +118,7 @@ const JournalScreen = ({ isWalletConnected }) => (
 
 const PlanScreen = ({ isWalletConnected }) => (
   <div>
-    <h2 className="text-2xl font-semibold mb-6">7-Day Tokenized Integration Plan</h2>
+    <h2 className="text-2xl font-semibold mb-6">7-Day Integration Plan</h2>
     <div className="bg-gray-800 rounded-lg shadow p-4 mb-4">
       <h3 className="font-semibold mb-2">Day 1: Grounding and Reflection</h3>
       <ul className="list-disc list-inside text-gray-300">
